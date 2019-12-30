@@ -1,1 +1,1 @@
-# Java GUI Demos - SWT, Swing, JavaFX
+# Java GUI Demos - SWT
