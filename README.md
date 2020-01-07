@@ -60,6 +60,6 @@ This is another simple example that demonstrates button functionality and the pr
 [Click here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/ButtonDemo.java) to go to the source code.  Tinker with the code to get a feel for how the components interact... and definitely refer to the resources and documentation below!
 
 ### Additional Reading
-**SWT Tutoria**l: [(https://www.vogella.com/tutorials/SWT/article.html](https://www.vogella.com/tutorials/SWT/article.html)\s\s
-**Example Code Snippets**: [https://www.eclipse.org/swt/snippets/](https://www.eclipse.org/swt/snippets/)\s\s
-**Documentation**: [https://www.eclipse.org/swt/docs.php](https://www.eclipse.org/swt/docs.php)\s\s
+**SWT Tutoria**l: [(https://www.vogella.com/tutorials/SWT/article.html](https://www.vogella.com/tutorials/SWT/article.html) . 
+**Example Code Snippets**: [https://www.eclipse.org/swt/snippets/](https://www.eclipse.org/swt/snippets/) . 
+**Documentation**: [https://www.eclipse.org/swt/docs.php](https://www.eclipse.org/swt/docs.php) . 
