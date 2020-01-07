@@ -8,7 +8,7 @@ The Standard Widget Toolkit (SWT) is a library that allows you to incorporate ba
 
 ---
 
-**1**. Go to [](https://download.eclipse.org/eclipse/downloads/) and navigate to the **Latest Release heading**.  You’ll see a column titled **Build Name**.  Click on the build number that corresponds to the version of Eclipse you downloaded for class.  It will likely be version 4.14 (or higher), but if you’re unsure, just open Eclipse and click on the “About Eclipse” tab in the top menu bar.  
+**1**. Go to [https://download.eclipse.org/eclipse/downloads/](https://download.eclipse.org/eclipse/downloads/) and navigate to the **Latest Release heading**.  You’ll see a column titled **Build Name**.  Click on the build number that corresponds to the version of Eclipse you downloaded for class.  It will likely be version 4.14 (or higher), but if you’re unsure, just open Eclipse and click on the “About Eclipse” tab in the top menu bar.  
 
 ![figure1](./images/figure1.png)
 
@@ -60,6 +60,6 @@ This is another simple example that demonstrates button functionality and the pr
 [Click here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/ButtonDemo.java) to go to the source code.  Tinker with the code to get a feel for how the components interact... and definitely refer to the resources and documentation below!
 
 ### Additional Reading
-SWT Tutorial: [](https://www.vogella.com/tutorials/SWT/article.html)
-Example Code Snippets: [](https://www.eclipse.org/swt/snippets/)
-Documentation: [](https://www.eclipse.org/swt/docs.php)
+SWT Tutorial: [(https://www.vogella.com/tutorials/SWT/article.html](https://www.vogella.com/tutorials/SWT/article.html)
+Example Code Snippets: [https://www.eclipse.org/swt/snippets/](https://www.eclipse.org/swt/snippets/)
+Documentation: [https://www.eclipse.org/swt/docs.php](https://www.eclipse.org/swt/docs.php)
