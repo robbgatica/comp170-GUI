@@ -40,4 +40,4 @@ The Standard Widget Toolkit (SWT) is a library that allows you to incorporate ba
 
 **9**.  You will now be returned to the **Projects** tab of the **Java Build Path** dialog.  The `org.eclipse.swt` project should be shown in the box titled ‘Required projects on the build path’.  Our newly created project – GUIDemo – now has access to all the SWT packages and source code.  Press **Apply and Close**. 
 
-![figure1](./images/figure9.png)
+![figure1](./images/figure8.png)
