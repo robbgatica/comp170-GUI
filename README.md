@@ -62,13 +62,86 @@ Below you'll find a walk-through on how to configure SWT in Eclipse,  as well as
 
 ## Example 1 - Hello World
 
-We can now try out some sample code to get a feel for how SWT works.  Go back to the GUIDemo project and create a new class.  You can name it whatever you’d like (‘Hello’ is the name in my example).  We’ll be creating a simple window that displays the text ‘Hello World!’, as shown below:
+We can now try out some sample code to get a feel for SWT and work with a few of its fundamental components: The `Display` class, `Shell` class, `Label` class, and the event loop.   We’ll be creating a simple window that displays the text ‘Hello World!’, as shown below: 
 
 <p align="center">
 <img src="./images/demo1.png" alt="demo1" />
   </p>
+  
 
-Go to the source code file [here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/Hello.java).  Copy the code into your program and run it.  You should see a window pop up with the text inside.  Experiment with it.  Change the text inside the window, set different size parameters for the frame, etc.  
+1.  To get started, we'll go back to the GUIDemo project and create a new class.  You can name it whatever you’d like (‘Hello’ is the name in my example).  Now that SWT has been configured, we can import the packages we'll need into our program: `org.eclipse.swt`, `org.eclipse.swt.widgets`, and `org.eclipse.swt.layout`.  You can use the wildcard '`*`' operator to include all the files in each package.  
+
+```
+import org.eclipse.swt.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+  
+  }
+ 
+ }
+```
+2.  We will now create instances of the `Display` and `Shell` classes.  `Display` is essentially the base class for SWT and the `Shell` class is the GUI window.  For the sake of simplicity, we'll name the instances 'display' and 'shell', respectively.  As you'll see below, the 'shell' instance takes the 'display' object we created as an argument.  
+
+```
+import org.eclipse.swt.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+public class Hello {
+
+	public static void main(String[] args) {
+  
+  Display display = new Display();
+  Shell shell = new Shell(display);
+  
+  }
+ 
+ }
+```
+
+3.  We can now give the shell (the actual GUI window) a title and configure the type of layout we want to use inside.  We'll use the `setText()` and `setLayout` methods of the Shell class to do this.  Layouts determine how the components are arranged inside the window.  However, since we are only using one component in this example, any layout will suffice... I chose `RowLayout`, but there are a number of others to choose from.  You can read more about them [here](https://www.eclipse.org/articles/Article-Understanding-Layouts/Understanding-Layouts.htm).
+
+The last component we'll be adding is a `Label`, which will contain the actual 'Hello World' string.  The process is pretty straight-forward for instantiating a Label object.  You just need to specify a parent component (our shell object) and a style value (none in our case) as arguments upon creation.  The `setText` method is used by the `Label` class as well, and this is where we are placing the 'Hello World' text.  Finally, we need to explicitly call the `open()` method on the shell in order to finish creating the window.  
+
+
+```
+public class Hello {
+
+	public static void main(String[] args) {
+  
+  Display display = new Display();
+  
+  Shell shell = new Shell(display);
+  shell.setText("Demo");
+	shell.setLayout(new RowLayout());
+
+	Label helloLabel = new Label(shell, SWT.NONE);
+	helloLabel.setText("Hello, World!");
+
+	shell.open();
+  
+  }
+ 
+ }
+```
+
+4.  We've finished setting up the window, but we are still missing one vital component in our program: an event loop.  This loop keeps the window visible (and running) until the user quits the program/terminates the shell.  Without this block of code, the window would only display for a fraction of second. 
+
+```
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		display.dispose();
+```
+
+
+5. Make sure the event loop is added inside your `main()` method in your class and run the program (click [here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/Hello.java) to refer the project file).  You should see a window pop up with the text inside.  Feel free to experiment with it.  Change the text inside the window, set different size parameters for the frame, etc.  
 
 ## Example 2 - Button Demo
 
