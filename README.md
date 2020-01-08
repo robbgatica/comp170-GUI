@@ -141,7 +141,7 @@ public class Hello {
 ```
 
 
-6. Make sure the event loop is added inside your `main()` method in your class and run the program (click [here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/Hello.java) to refer the project file).  You should see a window pop up with the text inside.  Feel free to experiment with it.  Change the text inside the window, set different size parameters for the frame, etc.  
+6. Make sure the event loop is added inside the `main()` method in your class and run the program (click [here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/Hello.java) to refer the project file).  You should see a window pop up with the text inside.  Feel free to experiment with it.  Change the text inside the window, set different size parameters for the frame, etc.  
 
 ## Example 2 - Button Demo
 
