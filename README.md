@@ -104,7 +104,8 @@ public class Hello {
 ```
 
 3.  We can now give the shell (the actual GUI window) a title and configure the type of layout we want to use inside.  We'll use the `setText()` and `setLayout()` methods of the Shell class to do this.  Layouts determine how the components are arranged inside the window.  However, since we are only using one component in this example, any layout will suffice... I chose `RowLayout`, but there are a number of others to choose from.  You can read more about them [here](https://www.eclipse.org/articles/Article-Understanding-Layouts/Understanding-Layouts.htm).  
-The last component we'll be adding is a `Label`, which will contain the actual 'Hello World' string.  The process is pretty straight-forward for instantiating a Label object.  You just need to specify a parent component (our shell object) and a style value (none in our case) as arguments upon creation.  The `setText()` method is used by the `Label` class as well, and this is where we are placing the 'Hello World' text.  Finally, we need to explicitly call the `open()` method on the shell in order to finish creating the window.  
+
+4.  The last component we'll be adding is a `Label`, which will contain the actual 'Hello World' string.  The process is pretty straight-forward for instantiating a Label object.  You just need to specify a parent component (our shell object) and a style value (none in our case) as arguments upon creation.  The `setText()` method is used by the `Label` class as well, and this is where we are placing the 'Hello World' text.  Finally, we need to explicitly call the `open()` method on the shell in order to finish creating the window.  
 
 
 ```
@@ -116,19 +117,19 @@ public class Hello {
   
   Shell shell = new Shell(display);
   shell.setText("Demo");
-	shell.setLayout(new RowLayout());
+  shell.setLayout(new RowLayout());
 
-	Label helloLabel = new Label(shell, SWT.NONE);
-	helloLabel.setText("Hello, World!");
+  Label helloLabel = new Label(shell, SWT.NONE);
+  helloLabel.setText("Hello, World!");
 
-	shell.open();
+  shell.open();
   
   }
  
  }
 ```
 
-4.  We've finished setting up the window, but we are still missing one vital component in our program: an event loop.  This loop keeps the window visible (and running) until the user quits the program/terminates the shell.  Without this block of code, the window would only display for a fraction of second. 
+5.  We've finished setting up the window, but we are still missing one vital component in our program: an event loop.  This loop keeps the window visible (and running) until the user quits the program/terminates the shell.  Without this block of code, the window would only display for a fraction of second. 
 
 ```
 		while (!shell.isDisposed()) {
@@ -140,7 +141,7 @@ public class Hello {
 ```
 
 
-5. Make sure the event loop is added inside your `main()` method in your class and run the program (click [here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/Hello.java) to refer the project file).  You should see a window pop up with the text inside.  Feel free to experiment with it.  Change the text inside the window, set different size parameters for the frame, etc.  
+6. Make sure the event loop is added inside your `main()` method in your class and run the program (click [here](https://github.com/robbgatica/comp170-GUI/blob/master/src/com/swt/comp170/Hello.java) to refer the project file).  You should see a window pop up with the text inside.  Feel free to experiment with it.  Change the text inside the window, set different size parameters for the frame, etc.  
 
 ## Example 2 - Button Demo
 
