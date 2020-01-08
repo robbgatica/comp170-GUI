@@ -5,6 +5,7 @@
 ---
 
 The Standard Widget Toolkit (SWT) is a library that allows you to incorporate basic GUI elements and widgets into your programs.  Once you configure your IDE with the SWT files, you can incorporate these widgets into your programs.
+Below you'll find instructions on how to configure Eclipse to use SWT, along with a couple of very simple example projects to highlight some of the fundamental components.  The project files can be found here: [https://github.com/robbgatica/comp170-GUI/tree/master/src/com/swt/comp170](https://github.com/robbgatica/comp170-GUI/tree/master/src/com/swt/comp170)
 
 ---
 
