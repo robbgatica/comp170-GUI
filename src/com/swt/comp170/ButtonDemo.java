@@ -7,12 +7,12 @@ import org.eclipse.swt.widgets.*;
 
 public class ButtonDemo {
 
-	private Display display;
-	private Shell shell;
-	private Label label;
-	private Button greetingButton, clearButton;
-	private Text textBox;
-	private GridLayout layout;
+	Display display;
+	Shell shell;
+	Label label;
+	Button greetingButton, clearButton;
+	Text textBox;
+	GridLayout layout;
 
 	public ButtonDemo() {
 
